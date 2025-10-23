@@ -5,11 +5,3 @@ GOOGLE_ID=540509532456-1l8dalaefbcrav4mst5ubm33rvmi9oph.apps.googleusercontent.c
 ## Secret is client secret
 GITHUB_SECRET=3e5c6c98f8a6a63c5f495880e710bca0a4768bab
 GOOGLE_SECRET=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
-
-
-### For github 
- Go to settings > Developers Setting > OAuth App > New Auth App (if not) > Go inside app > Generate New Secret
-
-
-### For Google
-Go to https://console.cloud.google.com/ > Search API and Services > Credentials > Do Edit > Create New Secret > (if no app Create one)
