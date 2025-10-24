@@ -3,6 +3,7 @@ import { signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const router = useRouter();
@@ -23,11 +24,14 @@ export default function Home() {
     console.log(result);
 
     if (result.error) {
-      alert(result.error);
+      // alert(result.error);
+      toast.error("Invalid Credentials");
+      return;
     }
 
     if (result.status === 200) {
       router.push(result.url);
+      toast.success("Logged In Successfully");
     }
   };
 
@@ -130,6 +134,11 @@ export default function Home() {
               Sign Up
             </a>
           </div>
+        </div>
+
+        <div className="bg-black/10 text-black shadow-md p-3 rounded-md text-sm flex flex-col justify-center items-center absolute top-4 right-4">
+          <b>For Admin Login Only</b>
+          <p>admin@gmail.com | admin@1234</p>
         </div>
       </div>
     </>

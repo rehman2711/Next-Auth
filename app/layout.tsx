@@ -1,5 +1,6 @@
 import "./globals.css";
-import SessionWrap from "./component/SessionWrap/SessionWrap"
+import SessionWrap from "./component/SessionWrap/SessionWrap";
+import { Toaster } from "react-hot-toast";
 
 export default function RootLayout({
   children,
@@ -9,11 +10,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <SessionWrap>
-      <body
-        className=""
-      >
-        {children}
-      </body>
+        <body className="">
+          <Toaster />
+          {children}
+        </body>
       </SessionWrap>
     </html>
   );

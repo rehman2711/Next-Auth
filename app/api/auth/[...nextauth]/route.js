@@ -49,17 +49,14 @@ const auth = NextAuth({
       },
     }),
     GithubProvider({
-      // clientId: process.env.GITHUB_ID,
-      // clientSecret: process.env.GITHUB_SECRET,
-      clientId: "Ov23liVesDNHjC4SQlmx",
-      clientSecret: "3e5c6c98f8a6a63c5f495880e710bca0a4768bab",
+      clientId: process.env.NEXT_PUBLIC_GITHUB_ID,
+      clientSecret: process.env.NEXT_PUBLIC_GITHUB_SECRET,
+
     }),
     GoogleProvider({
-      //   clientId: process.env.GOOGLE_ID,
-      // clientSecret: process.env.GOOGLE_SECRET,
-      clientId:
-        "540509532456-1l8dalaefbcrav4mst5ubm33rvmi9oph.apps.googleusercontent.com",
-      clientSecret: "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",
+        clientId: process.env.NEXT_PUBLIC_GOOGLE_ID,
+      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SECRET,
+
     }),
   ],
 });
