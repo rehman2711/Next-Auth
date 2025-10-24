@@ -4,3 +4,5 @@ GOOGLE_ID=540509532456-1l8dalaefbcrav4mst5ubm33rvmi9oph.apps.googleusercontent.c
 GOOGLE_SECRET=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
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=dishafulpagare
+
+Error_Resolved_ChatGPT_Link=https://chatgpt.com/share/68fb2d74-aa94-800b-8b6d-3fba576eb948
