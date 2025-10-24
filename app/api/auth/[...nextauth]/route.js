@@ -49,13 +49,13 @@ const auth = NextAuth({
       },
     }),
     GithubProvider({
-      clientId: process.env.NEXT_PUBLIC_GITHUB_ID,
-      clientSecret: process.env.NEXT_PUBLIC_GITHUB_SECRET,
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
 
     }),
     GoogleProvider({
-        clientId: process.env.NEXT_PUBLIC_GOOGLE_ID,
-      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SECRET,
+        clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
 
     }),
   ],
